@@ -70,7 +70,7 @@ form{
     right: 0;
 
     background-color: var(--accent-color);
-    height: 100%;
+    height: 44%;
     padding: 0 30px;
     border: none;
     border-radius: 1000px;
@@ -161,4 +161,44 @@ input[type="checkbox"]{
         margin-top: 50px;
         font-size: 15vw;
     }
+}
+
+.todo.high {
+    border-left: 5px solid red;
+}
+
+.todo.medium {
+    border-left: 5px solid orange;
+}
+
+.todo.low {
+    border-left: 5px solid green;
+}
+
+input[type="radio"] {
+    display: none;
+}
+
+.radio-label {
+    cursor: pointer;
+    padding: 10px 15px;
+    border: 2px solid #00bcd4;
+    border-radius: 25px;
+    background-color: #1c1c1c;
+    color: #00bcd4;
+    transition: background-color 0.3s, color 0.3s; 
+}
+
+input[type="radio"]:checked + .radio-label {
+    background-color: #00bcd4;
+    color: white;
+}
+
+.radio-label:hover {
+    background-color: rgba(0, 188, 212, 0.3);}
+
+.radio-group {
+    display: flex;
+    justify-content: space-around;
+    padding: 10px 0;
 }
